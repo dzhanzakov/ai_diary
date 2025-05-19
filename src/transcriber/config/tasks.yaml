@@ -1,0 +1,9 @@
+diary_summarization_task:
+  description: >
+    Given a diary entry transcribed from voice input: {transcript},
+    generate a creative title or a short summary that highlights the key points or mood of the diary.
+    The output should be in the same language as the diary entry.
+  expected_output: >
+    A creative and engaging title or a short summary paragraph (2-3 sentences)
+    that reflects the content and language of the diary entry.
+  agent: diary_ai_agent
