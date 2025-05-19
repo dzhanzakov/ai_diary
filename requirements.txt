@@ -1,2 +1,3 @@
 -e .
 crewai[tools]>=0.118.0,<1.0.0
+streamlit
