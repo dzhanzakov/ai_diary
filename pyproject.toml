@@ -1,7 +1,7 @@
 [project]
-name = "transcriber"
+name = "ai_diary"
 version = "0.1.0"
-description = "transcriber using crewAI"
+description = "ai_diary using crewAI"
 authors = [{ name = "Your Name", email = "you@example.com" }]
 requires-python = ">=3.10,<3.13"
 dependencies = [
@@ -9,11 +9,11 @@ dependencies = [
 ]
 
 [project.scripts]
-transcriber = "transcriber.main:run"
-run_crew = "transcriber.main:run"
-train = "transcriber.main:train"
-replay = "transcriber.main:replay"
-test = "transcriber.main:test"
+ai_diary = "ai_diary.main:run"
+run_crew = "ai_diary.main:run"
+train = "ai_diary.main:train"
+replay = "ai_diary.main:replay"
+test = "ai_diary.main:test"
 
 [build-system]
 requires = ["hatchling"]
@@ -21,3 +21,6 @@ build-backend = "hatchling.build"
 
 [tool.crewai]
 type = "crew"
+
+[tool.hatch.build.targets.wheel]
+packages = ["ai_diary"]
