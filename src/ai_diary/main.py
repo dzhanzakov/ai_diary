@@ -5,7 +5,6 @@ from openai import OpenAI
 from pydub import AudioSegment
 from pydub.utils import make_chunks
 from pathlib import Path
-
 from dotenv import load_dotenv
 from crew import TranscriberCrew
 
