@@ -7,8 +7,11 @@ from pydub.utils import make_chunks
 from pathlib import Path
 from dotenv import load_dotenv
 from crew import TranscriberCrew
+import os
 
 load_dotenv()
+
+print("🔑 OPENAI_API_KEY =", os.getenv("OPENAI_API_KEY"))
 
 client = OpenAI()
 
