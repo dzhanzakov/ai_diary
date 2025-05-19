@@ -1,7 +1,7 @@
 import streamlit as st
 import tempfile
 from pathlib import Path
-from main import TranscriberFlow
+from ai_diary.main import TranscriberFlow
 import os
 
 st.markdown(

@@ -22,5 +22,11 @@ build-backend = "hatchling.build"
 [tool.crewai]
 type = "crew"
 
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
 [tool.hatch.build.targets.wheel]
 packages = ["ai_diary"]
